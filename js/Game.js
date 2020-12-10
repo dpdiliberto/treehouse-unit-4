@@ -124,6 +124,7 @@
      gameOver() {
          //displays the original start screen overlay
         $('#overlay').show();
+        document.querySelector("#btn__reset").textContent = 'Play again?';
          //depending on the outcome of the game update the overlay h1 with win or lose message
         const gameOverMessage = document.querySelector('#game-over-message');
         if (this.checkForWin()) {  
